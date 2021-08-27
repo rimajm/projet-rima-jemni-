@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="flash.css" />
+
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <title>ARVEA</title>
+  </head>
+  <body>
+    <header class="Cart-Container">
+      <div class="navb">
+        <div>
+          <a
+            href="http://tn.arvea-nature.com/flipbook/index.html"
+            target="_blank"
+            >Catalogue N°11</a
+          >
+          <a> /</a>
+          <a href="login.html" target="_blank"
+          >rejoindre nous </a
+        >
+        </div>
+        <img
+          class="logo"
+          src="http://tn.arvea-nature.com/end/uploads/images/logo-arvea-black.png"
+          alt=""
+        />
+      </div>
+      <nav>
+        <div>
+          <a href="about.html"> about </a>
+          <a href="soins.html"> soins </a>
+          <a href="maquillage.html">maquillage</a>
+          <a href="complement.html "> complement alimentaire </a>
+        </div>
+        <a href="#flashvente" class="active1"> flash vente </a>
+      </nav>
+      <!--------------------------->
+    </header>
+    <body>
+      <section class="container content-section">
+          <h2 class="section-header"> FLASH VENTE du 19 a 29 aout 2021</h2>
+          <div class="shop-items">
+              <div class="shop-item">
+                  <span class="shop-item-title">ecran minerale teinte </span>
+                  <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/235265577_368906591416294_7609379148613743105_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=B6nVdi6bGfkAX_NsmAX&_nc_ht=scontent.ftun1-2.fna&oh=721aaa54687d298bdc7420d00cbf8dbf&oe=61276683">
+                   <div class="shop-item-details">
+                      <span class="shop-item-price">65.000dt</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <div class="shop-item">
+                  <span class="shop-item-title">lip gloss </span>
+                  <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/239205512_399273924894053_2756146607631898393_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=tLvasxZf64MAX_QOPh-&_nc_ht=scontent.ftun1-2.fna&oh=eb2ad7b837e9be7d7c6b712e4e874e88&oe=6127B9F2">
+                  <div class="shop-item-details">
+                      <span class="shop-item-price">17,900 dt </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <div class="shop-item">
+                  <span class="shop-item-title">fond de teint spf 20+ </span>
+                  <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/239554545_375781107552667_8821790814177064336_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=QLGysh15FywAX9DgdpQ&_nc_ht=scontent.ftun1-2.fna&oh=bdfa805de78adbc7279d56a58ee4f049&oe=612786CA">
+                  <div class="shop-item-details">
+                      <span class="shop-item-price">34.900 dt</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                 
+              </div>
+              <div class="shop-item">
+                  <span class="shop-item-title">gel douche </span>
+                  <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/236439949_3057900484482979_4378505582752619896_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Qhzqw-wFqgkAX9HnkBM&_nc_ht=scontent.ftun1-2.fna&oh=6aab30076aef0166c87faf29b237f43a&oe=61278022">
+                  <div class="shop-item-details">
+                      <span class="shop-item-price">11.900 dt </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+
+              <div class="shop-item">
+                <span class="shop-item-title">shompoing anti-chute</span>
+                <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/236199772_797907664213063_4124380819503369408_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=m5LJZIMTt7cAX95QDF2&_nc_ht=scontent.ftun1-2.fna&oh=afebc26a0521124231b84d169f13e06d&oe=6127A5B6">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">17.700 dt </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+              </div>
+
+
+              <div class="shop-item">
+                <span class="shop-item-title">creme de pied </span>
+                <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/239646179_1177981829388153_5083973489782863879_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=M3FvhSidPoIAX9RjjzV&_nc_ht=scontent.ftun1-2.fna&oh=0155bbb7208f3d11a50968d1725952d2&oe=6127662E">
+                <div class="shop-item-details">
+                  <span class="shop-item-price">9.900 dt </span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+              </div>
+
+
+              <div class="shop-item">
+                 <span class="shop-item-title">gel daintaire </span>
+                 <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/236544536_961219748063035_2551513869743816368_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=lYLG3_wMNAMAX-3FUq8&_nc_ht=scontent.ftun1-2.fna&oh=17d2c860c8c6ca2f96546a174606910d&oe=6127AB34">
+                 <div class="shop-item-details">
+                   <span class="shop-item-price">17.900 dt </span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+             </div>
+
+               <div class="shop-item">
+                 <span class="shop-item-title">beurre royale </span>
+                 <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/239866342_3194324017462020_3452362725681298138_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=J6J0V-6Db_wAX93DCtn&tn=FfzCs9PwCcWTg4px&_nc_ht=scontent.ftun1-2.fna&oh=fc4c0762905507bf971b427459c190d6&oe=61278C12">
+                 <div class="shop-item-details">
+                   <span class="shop-item-price">13.900 dt </span>
+                   <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                 </div>
+               </div>
+
+              <div class="shop-item">
+                <span class="shop-item-title">arvea color </span>
+                <img class="shop-item-image" src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.15752-9/235133369_3767081460060042_3323050895721682693_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=kK_l2WWCPKkAX_uAZf9&_nc_ht=scontent.ftun1-2.fna&oh=25f250814aed452bdd951d608a5bd7aa&oe=61279958">
+                <div class="shop-item-details">
+                  <span class="shop-item-price">21.800 dt </span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+              </div> 
+            </div>
+        </section>
+
+        <section class="container content-section">
+          <h2 class="section-header">CART</h2>
+          <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+            
+          </div>
+          <div class="cart-total">
+              <div>
+            <strong class="cart-total-title">Total</strong>
+              <span class="cart-total-price">$0</span>
+            </div>
+              <button class="button">
+                <a  href="about.html" > terminer </a>
+      
+              </button>
+
+           </div>
+  
+        </section>
+        <footer class="footer-basic">
+          <ul class="list-inline">
+             <div class="list-inline-item">
+                 
+                 <h2>Arvea Nature</h2>
+                 <div >
+                     
+                    
+                         <a href="http://tn.arvea-nature.com/page/qui-sommes-nouss">Qui sommes nous ?</a>
+                    
+                         <a href="http://tn.arvea-nature.com/page/le-concept">Le concept</a>
+                    
+                 </div>
+             </div>
+             <div class="list-inline-item">
+                 <h2>Services</h2>
+                 <div >
+                     
+                     
+                         <a href="login.html" target="_blank"
+                         >rejoindre nous </a>
+                     
+                 </div>
+             </div>
+             </ul>
+         <p class="copyright">Company Name © 2018</p>
+     </footer>
+       <script src="flash.js"></script>
+      
+  </body>
+  </html> 

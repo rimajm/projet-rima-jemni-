@@ -1,0 +1,72 @@
+
+
+.box {
+   
+   margin-top: 50px ;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    color: #747474;
+   justify-content: space-between;
+    width: 100%;
+   
+}
+.cadr h1{
+    text-decoration: none;
+}
+
+.cadr{
+ 
+    width: 20%;
+    box-shadow: ivory;
+    transition: cubic-bezier(1, 0, 0, 1);
+    box-shadow: #747474;
+  
+}
+#barre {
+    font-size: 0.9 em;
+    font-weight: 300;
+    line-height: 1.5;
+    padding : 1.2em;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 96, 99);
+    text-decoration: none;
+}
+#barre h1 {
+    text-decoration: none;
+}
+h1:hover{
+    text-decoration: none;
+}
+
+.carre{
+    box-shadow: 0 5px 10px 0 transparent;
+    transition: box-shadow .2s ease 0s;
+   
+}
+.carre {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+  
+    position: relative;
+    display: block;
+    color: #747474;
+}
+#carre:hover{
+    box-shadow: rgba(0,0,0,.03);
+}
+.img5{
+    height:70%;
+    width: 70%;
+}
+.img6{
+    height:40%;
+    width: 55%;
+}
+
+
